@@ -1,4 +1,4 @@
-package com.example.injaewook
+package com.appFiles.injaewook
 
 import org.junit.Test
 
