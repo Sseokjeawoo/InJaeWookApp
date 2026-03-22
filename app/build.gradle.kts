@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.injaewook"
+    namespace = "com.appFiles.injaewook"
     compileSdk = 36
 
     defaultConfig {
@@ -56,4 +56,15 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+// Retrofit & Gson (네트워크 통신 및 JSON 변환)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // ViewModel & Coroutines (상태 관리 및 비동기 처리)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
+
+
 }
