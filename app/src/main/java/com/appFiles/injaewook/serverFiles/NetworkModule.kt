@@ -26,7 +26,7 @@ interface EmotionApi {
 
 // 3. 통신 객체 생성 (안드로이드 에뮬레이터 전용 로컬호스트 IP 적용)
 object RetrofitClient {
-    private const val BASE_URL = "http://172.30.1.97:8000"
+    private const val BASE_URL = "http://34.64.97.231:8000"
 
     val api: EmotionApi by lazy {
         Retrofit.Builder()
